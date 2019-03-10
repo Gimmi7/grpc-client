@@ -25,11 +25,11 @@ public class ScenarioClientApplication implements CommandLineRunner {
 
 		client.initialize("localhost",8980);
 
-		client.cheekIn();
+//		client.cheekIn();
 
 //		client.chunker();
 
-//        client.getCompanies("companyA");
+        client.getCompanies("companyA");
 
 //		client.batchWriteCompany();
 

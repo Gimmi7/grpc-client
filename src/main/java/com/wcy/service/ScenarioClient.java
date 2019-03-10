@@ -118,7 +118,7 @@ public class ScenarioClient {
         };
 
         CompanyName request=CompanyName.newBuilder().setCompanyName(companyName).build();
-        asyncstub.getCompanies(request,responseObserver);
+        asyncstub.withDeadlineAfter(4, TimeUnit.SECONDS).getCompanies(request,responseObserver);
 
         /**
          * 下面是使用blockingStub的情况
